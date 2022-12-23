@@ -1,0 +1,400 @@
+<html>
+
+<head>
+	<title>
+		Chasse au trésor Noël 2022
+	</title>
+	<meta charset="UTF-8">
+	<style  type="text/css">
+		h1{
+			text-align: center;
+		}
+		body{
+			font-family: Century Gothic,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+			background-color: #28242b;
+			color: #fff9f0;
+		}
+		.paragraphe-intro{
+			margin-bottom: 20px;
+			text-align: justify;
+		}
+		.section{
+			border: solid 1px #fff9f0;
+			border-radius: 20px;
+			padding: 30px;
+			background-color: #373a52;
+			margin-bottom: 20px;
+		}
+		.global-container{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.image-centre{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.clepsydre{
+			border-radius: 20px;
+			cursor: pointer;
+		}
+		.indice{
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			width: 60%;
+			background-color: #e6d59a;
+			color: black;
+			font-weight: 700;
+			border: 3px solid #705127;
+			border-radius: 3px;
+			padding: 20px;
+			font-size: 16;
+			margin-bottom: 20px;
+		}
+		iframe{
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+
+<body>
+
+<div class="global-container">
+	<h1>La (ké)quête de Noël</h1>
+	<div class="section">
+		<div class="paragraphe-intro">
+			<p>
+				Bonjour les ptits potes,
+			</p>
+			<p>
+				Bien joué, vous avez été bon à ce jeu d'adresse (web). Lol c'est le papi Jean-Pierre qui aurait pu la faire.
+			</p>
+			<img src="image1.png" class="image-centre" width="90%">
+		</div>
+		<div class="paragraphe-intro">
+			<p>
+				Mais oui trêve de plaisanterie. C'est une triple (ké)quête qui vous attend. 
+			</p>
+			<img src="image2.png" class="image-centre" width="90%">
+			<p> Bon plus sérieusement, vous avez tous été convoqués pour des 
+				raisons différentes. arthur34 pour enfin finir sa quête de Moloke depuis plus de 15 ans d'errance, 
+				Minautore pour niquer la gueule de Wotan once more et le Taureau de Mauguio pour récupérer sa vachette d'interville !<br/>
+				Par chance, bien que les buts soient distincts, la manière de la réaliser est la même. Suivre cette chasse aux trésors et aller au bout. 
+			</p>
+		</div>
+		<div class="paragraphe-intro">
+			<p>	
+				Le principe est assez simple, vous allez devoir aller devoir vous rendre succéssivement dans 10 lieux autour de la maison du Sartre. 
+				Sur chacun de ces lieux, il vous faudra trouver un bout de papier. Sur ce bout de papier, une enigme sera écrite, il vous faudra alors vous rendre 
+				sur ce site et inscrire la réponse à l'énigme. 
+			</p>
+			<p>
+				Vous avez déjà trouvé le premier lieu qui est la "cascade" et l'énigme qui était de trouver ce site web. A vous donc de trouver les 9 autres lieux et les 
+				8 autres énigmes.
+			</p>
+			<p>
+				NB : Chaque réponse devra être écrite en minuscule sans accentuation (sinon c'est chiant à coder). 
+			</p>
+		</div>
+		<div class="paragraphe-intro">
+			<p>
+				Avant de partir pour cette triple (ké)quête il faudra vous équiper des choses suivantes :
+				<ul>
+					<li>Vos cerveaux, c'est votre meilleur ami pour cette épreuve</li>
+					<li>Vos téléphones portables mais seules les applications appel, sms et Youtube sont autorisées</li>
+					<li>La calculatrice est interdite, tous les calculs se font de tête, éventuellement sur papier</li>
+				</ul>
+			</p>
+		</div>
+		<div class="paragraphe-intro">
+			<p>
+				Dès que vous êtes prêts, cliquez sur ce petit BG :
+			</p>
+			<img src="image3.JPG" class="image-centre clepsydre" width="100" onclick="showFirst()">
+		</div>
+		<div>
+		</div>
+	</div>
+	<div class="section" id="2" hidden="hidden">
+		<h2>Avancement de la quête : 2/10</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Vous êtes prêts ? ET bien LIGRETTTOOOOOOO... Voici l'indice pour trouver le second lieu.
+			</p>
+		</div>
+			<div class="indice">
+				On cherche un lieu où il y a Arthur mais pas Mino, où il y a Louan mais pas Zouko, où il y a Cécile mais pas Véro et où il y a Dudu mais pas Nyko.
+			</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-2" type="text">
+			<button onclick="verifiyAnswer(2)">Valider</button>
+			<div id="wrong-answer-2" hidden="hidden">
+				<span id="entered-value-2"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="3" hidden="hidden">
+		<h2>Avancement de la quête : 3/10</h2>
+		<div class="paragraphe-intro">
+			<p>
+				Et oui bien joué los primos ! One Two Three Four Five .... and Six. Donc S. 
+			</p>
+			<img src="image3.png" class="image-centre" width="80%">
+		</div>
+		<div class="paragraphe-intro">
+			<p>
+				Allez sans transition aucune, voici un indice pour trouver le lieu suivant :
+			</p>
+		</div>
+		<div class="indice">
+			Le reste de la division euclidienne de 6861 par 328 devrait vous y aider...
+		</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-3" type="text">
+			<button onclick="verifiyAnswer(3)">Valider</button>
+			<div id="wrong-answer-3" hidden="hidden">
+				<span id="entered-value-3"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="4" hidden="hidden">
+		<h2>Avancement de la quête : 4/10</h2>
+		<div class="paragraphe-intro">
+			Bien joué les gars, c'était pas simple. Allez on se fait un kiff :
+		</div>
+		<iframe height="350" src="https://www.youtube.com/embed/4P56tqkoP5E" title="Générique - Petit Potam" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="paragraphe-intro">
+			<p>
+				Allez, petit rébus pour le prochain lieu...
+			</p>
+		</div>
+		<div class="indice">
+			<img src="image4.png" class="image-centre" width="80%">
+		</div>
+		<br/>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-4" type="text">
+			<button onclick="verifiyAnswer(4)">Valider</button>
+			<div id="wrong-answer-4" hidden="hidden">
+				<span id="entered-value-4"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="5" hidden="hidden">
+		<h2>Avancement de la quête : 5/10</h2>
+		<div class="paragraphe-intro">
+			Puchline indémodable du jeune Avezard :
+		</div>
+		<img src="image5.png" class="image-centre" width="80%"><br/><br/>
+		<div class="indice">
+			<p>
+				Indice musical cette fois-ci : <br/><br/>
+				<audio 
+				width="60%"
+				controls
+				src="amelie-poulain.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+			</audio>
+			</p>
+		</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-5" type="text">
+			<button onclick="verifiyAnswer(5)">Valider</button>
+			<div id="wrong-answer-5" hidden="hidden">
+				<span id="entered-value-5"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="6" hidden="hidden">
+		<h2>Avancement de la quête : 6/10</h2><br/>
+		<div class="paragraphe-intro">
+			On garde 1 blé, 1 laine, 1 minerai, 1 bois et 1 argile. On jette les 4 autres à cause du 7. 
+			On contruit une route et on fait une carte développement en espérant tomber sur la carte construction de deux routes. 
+			Si c'est le cas, on peut prendre la route la plus longue avec ces 3 routes supplémentaires. 
+			On avait déjà 8 points de victoire. Avec ces 2 supplémentaires ça fait 10. BANGER !
+		</div>
+		<div class="paragraphe-intro">
+			Pour le nouveau lieu à trouver, c'est un combo des 3 indices suivants : 
+		</div>
+		<div class="indice">
+			<p>
+				Une musique : <br/><br/>
+				<audio 
+				width="60%"
+				controls
+				src="am-i-wrong.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+			</audio>
+			</p>
+			<p>
+				Un animal : <br/><br/>
+				<img src="spider.jpg" class="image-centre" width="100px"><br/><br/>
+			</p>
+			<p>
+				Une direction : &#8593;
+			</p>
+		</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-6" type="text">
+			<button onclick="verifiyAnswer(6)">Valider</button>
+			<div id="wrong-answer-6" hidden="hidden">
+				<span id="entered-value-6"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="7" hidden="hidden">
+		<h2>Avancement de la quête : 7/10</h2>
+		<div class="paragraphe-intro">
+			Et oui BASSHUNTEEEEEEEER : <br/><br/>
+			<audio 
+				id="basshunter"
+				controls
+				src="now-youre-gone.mp3">
+					Your browser does not support the
+					<code>audio</code> element.
+			</audio><br/>
+		</div>
+		<div class="paragraphe-intro">
+			L'indice pour le prochain lieu est simple :
+		</div>
+		<div class="indice">
+			Il vous faut à présent aller sur les traces de copaingilles... 
+		</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-7" type="text">
+			<button onclick="verifiyAnswer(7)">Valider</button>
+			<div id="wrong-answer-7" hidden="hidden">
+				<span id="entered-value-7"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="8" hidden="hidden">
+		<h2>Avancement de la quête : 8/10</h2><br/>
+		<div class="paragraphe-intro">
+			<img src="image6.png" class="image-centre" width="80%">
+		</div>
+		<div class="paragraphe-intro">
+			Pour le nouveau lieu, trouvez le mot manquant dans cette citation :
+		</div>
+		<div class="indice">
+			Selon Mc Walter, le père de Vanessa avait un polo Lacoste, Lacoste qui est a pour 
+			symbole un crocodile, crocodile qui est un mot en 3 syllabes comme arrosoir, ______ ou encore volonté. 
+		</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-8" type="text">
+			<button onclick="verifiyAnswer(8)">Valider</button>
+			<div id="wrong-answer-8" hidden="hidden">
+				<span id="entered-value-8"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="9" hidden="hidden">
+		<h2>Avancement de la quête : 9/10</h2>
+		<div class="paragraphe-intro">
+			Et oui c'était bien Fifi Brindacier qu'Orel rajoute à la fin. La réponse en image : 
+		</div>
+		<iframe height="350" src="https://www.youtube.com/embed/bAW4jV1T0nw" title="Bloqués #5 - Le jeu du Johnny Depp" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="paragraphe-intro">
+			Pour le nouveau lieu, revivons une situtation qui se passe chaque fois que l'on quitte Ucel :
+		</div>
+		<div class="indice">
+			Vous allez bientôt partir de chez Papi et Mamie pour rejoindre Aix, Mauguio ou Montpellier. C’est à ce moment précis que Mamie vous demande d’aller dans un certain lieu, récupérer un liquide rouge, précieux. Vous me suivez ?
+		</div>
+		<div>
+			Marque la réponse à l'énigme ici :
+			<input id="input-9" type="text">
+			<button onclick="verifiyAnswer(9)">Valider</button>
+			<div id="wrong-answer-9" hidden="hidden">
+				<span id="entered-value-9"></span> n'est pas la bonne réponse...
+			</div>
+		</div>
+	</div>
+	<div class="section" id="10" hidden="hidden">
+		<h2>Avancement de la quête : 10/10</h2>
+		<div class="paragraphe-intro">
+			<img src="image7.png" class="image-centre" width="75%">
+		</div>
+		<div>
+			Vous touchez au but de cette quête. Vous allez bientôt résoudre Moloke, retrouver la vachette d'interville, niquer la gueule de Wotan. <br/><br/>
+			Allez on y va dernier indice : 
+		</div><br/>
+		<div class="indice">
+			Dans la chanson de Renan Luce, la femme qui lui a envoyé la lettre lui a indiqué qu’elle sera quelque part le dimanche. Mais où ? 
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">  
+	function showFirst(){
+		var firstIndication = document.getElementById("2");
+		firstIndication.hidden = false;
+		firstIndication.scrollIntoView();
+	}
+	function verifiyAnswer(nbQuestion){
+		switch (nbQuestion) {
+			case 2:
+				verifyAnswerSpecific(2, 's')
+				break;
+			case 3:
+				verifyAnswerSpecific(3, 'barbotam')
+				break;
+			case 4:
+				verifyAnswerSpecific(4, 'velo')
+				break;
+			case 5:
+				verifyAnswerSpecific(5, '10');
+				break;
+			case 6:
+				var rep = verifyAnswerSpecific(6, 'basshunter');
+				if (rep){
+					var player = document.querySelector('#basshunter');
+					player.play();
+				}
+				break;
+			case 7:
+				verifyAnswerSpecific(7, 'qg');
+				break;
+			case 8:
+				verifyAnswerSpecific(8, 'brindacier')
+				break;
+			case 9:
+				verifyAnswerSpecific(9, '1')
+				break;
+		}
+	}
+
+	function verifyAnswerSpecific(nbQuestion, answer){
+		var value = document.getElementById("input-".concat(nbQuestion.toString())).value;
+		var wrongAnswer = document.getElementById("wrong-answer-".concat(nbQuestion.toString()));
+		if (value == answer){
+			var nextIndication = document.getElementById((nbQuestion + 1).toString());
+			wrongAnswer.hidden = true;
+			nextIndication.hidden = false;
+			nextIndication.scrollIntoView();
+			return true;
+		}
+		else{
+			var spanValue = document.getElementById("entered-value-".concat(nbQuestion.toString()));
+			spanValue.textContent = value;
+			wrongAnswer.hidden = false;
+			return false;
+		}
+	}
+</script>
+</body>
+
+</html>
